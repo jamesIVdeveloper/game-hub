@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Game Finder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Game Hub</h1>
+
+    <p id="intro-paragraph">
+      Find great deals on PC games. Enter a Game Title, or set your price range,
+      and find your next game!
+    </p>
+
+    <div id="form-align">
+      <form action="" id="search-form">
+        <div id="container">
+          <input
+            type="text"
+            placeholder="search by game title"
+            id="js-game-search"
+          />
+        </div>
+        <div id="container">
+          <label for="low-price">Min $</label>
+          <input type="number" id="js-low-price" value="0" />
+        </div>
+        <div id="container">
+          <label for="high-price">Max $</label>
+          <input type="number" id="js-high-price" value="20" />
+        </div>
+        <div id="js-search-button">
+          <input type="submit" id="js-submit" value="Search" />
+        </div>
+      </form>
+    </div>
+
+    <p id="js-error-message" class="error-message"></p>
+
+    <section id="results" class="hidden">
+      <h2 id="results-title">Results</h2>
+      <ul id="results-list"></ul>
+    </section>
+
+    <!--scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>

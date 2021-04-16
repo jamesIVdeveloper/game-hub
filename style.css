@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+/* mobile first */
+
+/* body/background */
+
+body {
+  background-color: #3a70a6;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+  font-family: fantasy;
+  text-shadow: 2px 3px black;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+#intro-paragraph {
+  text-align: center;
+  margin: 5px 5px 20px 5px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+/* form */
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 5px 5px;
+  border-style: solid;
+  border-radius: 25px;
+  border-color: black;
+  padding: 10px 0 10px 0;
+  background-color: #202020;
+}
+
+#form-align {
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+}
+
+#js-game-search {
+  width: 200px;
+}
+
+input::placeholder {
+  font-style: italic;
+  text-align: center;
+}
+
+label {
+  color: white;
+}
+
+#js-low-price,
+#js-high-price {
+  width: 43px;
+  margin-left: 0;
+}
+
+#js-submit {
+  width: 75px;
+}
+
+#js-search-button {
+  display: flex;
+  justify-content: center;
+}
+
+input,
+label {
+  margin: 3px 3px 3px 3px;
+}
+
+#js-submit:hover {
+  cursor: pointer;
+}
+
+/* results */
+
+#results-list {
+  padding: 0;
+  list-style: none;
+}
+
+#game-result {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+  color: black;
+  background-color: #e0e0e0;
+  padding: 0px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  width: 400px;
+}
+
+.game-title {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* for larger screens */
+
+@media all and (min-width: 700px) {
+  body {
+    background: linear-gradient(45deg, #909090, #3a70a6);
+  }
+
+  h1,
+  h2 {
+    color: white;
+  }
+
+  #intro-paragraph {
+    color: white;
+  }
+
+  form {
+    border-color: black;
+  }
+
+  label {
+    color: white;
+  }
+
+  li {
+    width: 300px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
